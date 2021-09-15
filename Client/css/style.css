@@ -1,0 +1,173 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(198 172 255);
+  height: 100%;
+  width: 100%;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+#heading {
+  text-align: center;
+  margin-top: 14px;
+}
+#roomheading {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#wrapper {
+  max-width: 68%;
+  height: 90%;
+  margin: 30px auto auto;
+  background-color: rgb(249, 246, 255);
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: 33% 67%;
+  grid-template-rows: 20% 80%;
+  box-shadow: 1px 1px 1px 1px;
+  border-radius: 64px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.contactsContainer {
+  background-color: rgb(249, 246, 255);
+  /* background-image: url(https://i.pinimg.com/736x/76/0d/91/760d91d….jpg); */
+  float: left;
+  border: solid black;
+  border-width: 1px 2px 0px 0px;
+  border-radius: 0px 0px 56px 0px;
+  overflow-y: auto;
+}
+.chat-window {
+  /* background-image: url("https://s5.favim.com/orig/160114/background-beautiful-black-and-white-celestial-Favim.com-3894277.jpg"); */
+  background-color: rgb(249 246 255);
+  display: grid;
+  grid-template-rows: 87% 13%;
+  position: relative;
+}
+
+#message {
+  text-align: center;
+  width: 71%;
+  height: 37px;
+  border-radius: 10px;
+}
+#msgfield {
+  position: sticky;
+  background-color: rgb(249, 246, 255);
+  padding: 0px 8% 0px 8%;
+  margin-top: 9px;
+}
+.idsPara {
+  height: 56px;
+  background-color: rgba(0, 0, 255, 0.29);
+  margin-top: 2px;
+  color: black;
+  padding: 17px;
+}
+#sendBtn {
+  width: 70px;
+  height: 37px;
+  border-radius: 10px;
+}
+
+#resetbtn,
+#joinroombtn,
+#clearbtn,
+#sendBtn {
+  height: 31px;
+  border-radius: 10px;
+  padding: 6px;
+  margin: 14px 0px 7px 3px;
+  background-color: #aebecc00;
+  cursor: pointer;
+}
+#sendBtn {
+  margin: 0px;
+}
+
+#resetbtn:hover,
+#joinroombtn:hover,
+#clearbtn:hover,
+#sendBtn:hover {
+  color: rgb(216, 186, 186);
+  background-color: #78a7d100;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+#contacts_span {
+  border-radius: 0px 57px 0px 0px;
+  /* border-radius: 2px 20px 0px 0px; */
+  display: inline-block;
+  padding-top: 43px;
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  /* background-color: rgb(249, 246, 255); */
+  background-color: rgb(155 155 155 / 30%);
+  border: solid black;
+  border-width: 0px 2px 2px 0px;
+  background: linear-gradient(
+    180deg,
+    rgba(133, 132, 154, 1) 0%,
+    rgba(151, 215, 240, 1) 51%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+#room {
+  height: 31px;
+  padding: 6px;
+}
+.msg {
+  background-color: #dac6df7d;
+  color: black;
+  margin: 5px;
+  border: 2px solid #e3cbcb;
+  border-radius: 10px;
+  padding: 6px;
+  border: 1px solid;
+  font-family: cursive;
+  max-width: 77%;
+  word-break: break-all;
+}
+
+.roominfo {
+  background-color: rgb(249, 246, 255);
+  padding: 8px;
+  border-bottom: 2px solid black;
+}
+
+#typingInfo {
+  color: black;
+  clear: both;
+  text-align: center;
+  /* position: fixed; */
+  top: 526px;
+  left: 52%;
+  font-size: 17px;
+
+  font-family: cursive;
+}
+
+.left {
+  float: left;
+  clear: both;
+}
+.right {
+  float: right;
+  clear: both;
+}
+
+#messagediv {
+  overflow-y: auto;
+  position: relative;
+}

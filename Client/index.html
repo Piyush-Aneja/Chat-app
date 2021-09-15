@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.3/socket.io.min.js"></script> -->
+
+    <!-- <script src="http://localhost:3001/socket.io/socket.io.js"></script> -->
+    <script src="https://online-chat-app28.herokuapp.com/socket.io/socket.io.js"></script>
+
+    <!-- <script src="./chat.js"></script> -->
+
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="heading">Welcome</h1>
+    <div id="wrapper">
+      <span id="contacts_span"> <b>Contacts Online</b></span>
+      <div class="roominfo">
+        <!-- <h3 id="roominfoHeading"></h3> -->
+        <p id="roomid"></p>
+
+        <input type="text" name="room" id="room" placeholder="Room id" />
+        <button id="joinroombtn">Join Room</button>
+        <button id="resetbtn" onClick="clearSelection()">Reset</button>
+        <button id="clearbtn" onClick="clearChat()">Delete all Messages</button>
+        <p id="typingInfo"></p>
+      </div>
+      <div class="contactsContainer"></div>
+
+      <div class="chat-window">
+        <div id="messagediv"></div>
+
+        <div id="msgfield">
+          <input
+            type="text"
+            name="message"
+            placeholder="Type your message"
+            id="message"
+            value=""
+          />
+          <button id="sendBtn">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./chat.js"></script>
+  </body>
+</html>
